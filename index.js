@@ -58,6 +58,7 @@ async function getRandomCharacter() {
   );
   return await response.json();
 }
+
 async function getRandomCharacterInfo() {
   const characterNumber = Math.floor(Math.random() * 826) + 1;
   const response = await fetch(
